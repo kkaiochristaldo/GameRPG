@@ -1,0 +1,148 @@
+:root {
+
+    --background: #4C4C4C;
+    --color-buttons-background: #166ACD;
+    --color-inputs-background: #484747;
+    --color-font-login: #5A5A5A;
+    --color-section: #282828;
+    --color-box-shadow-section: rgba(0, 0, 0, 0.25);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {    
+    background-color: var(--background);
+}
+
+.section-login {
+
+    height: 400px;
+    width: 300px;
+    background-color: var(--color-section);
+    border-radius: 15px;
+    box-shadow: 5px 5px 4px var(--color-box-shadow-section);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.section-login form {
+
+    width: 100%;
+    height: 100%;
+
+}
+.section-login form label {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.section-login form img {
+    margin: 50px 0;
+    height: 80px;
+    width: 80%;
+}
+
+.section-login form label input {
+    height: 32px;
+    width: 60%;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    padding-left: 20px;
+    background-color: var(--color-inputs-background);
+    color: var(--color-font-login);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.section-login form label .btn-login {
+    margin-top: 15px;
+    height: 30px;
+    width: auto;
+    padding: 0 20px;
+    background-color: var(--color-buttons-background);
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+    border-style: none;
+    outline: none;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.section-login form label .btn-login:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+.section-login form label .carousel {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--color-inputs-background);
+}
+
+.section-login form label .carousel .img-carousel {
+
+    height: 95%;
+    width: 95%;
+    background: white;
+    border-radius: 10px;
+    margin: 2.5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.section-login form label .btn-carousel {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0 0 1.5px var(--color-inputs-background);
+    color: gray;
+    font-size: 20px;
+    transition-duration: 0.5s;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    position: absolute;
+}
+.section-login form label .btn-carousel:hover {
+    color: white;
+    background-color:var(--color-inputs-background);
+}
+
+.section-login form label #btn-nex {
+    left: 73%;
+    top: 46%;
+    
+}
+
+.section-login form label #btn-prev {
+    right: 73%;
+    top: 46%;
+    
+}
+.invisible {
+    display: none;
+}

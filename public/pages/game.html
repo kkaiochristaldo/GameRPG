@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/game.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+    
+    <title>Munchkin - Online</title>
+</head>
+<body>
+
+    <section  class="img-background">
+        <img src="../assets/img/background-munchkin.png">
+    </section>
+    <section class="side-bar-rigth"></section>
+    <section class="side-bar-left"></section>
+
+    <section class="table-game">        
+        <div class="square-game"></div>
+        <div class="square-game"></div>
+        <div class="square-game"></div>
+        <div class="square-game"></div>
+        <div class="square-game"></div>
+        <div class="square-game"></div>
+
+        <div class="card-treasure">
+            <!-- <img src="./img/card.jfif" alt=""> -->
+        </div>
+        <div class="card-war">
+            <!-- <img src="./img/card.jfif" alt=""> -->
+        </div>
+        <div class="card-door" >
+            <!-- <img src="./img/card.jfif" alt=""> -->
+        </div>
+
+    </section>
+    <section class="card-bar">
+        <!-- <div class="card-of-hand">
+            <img src="./img/card.jfif" alt="">
+        </div>
+        <div class="card-of-hand">
+            <img src="./img/card.jfif" alt="">
+        </div>
+        <div class="card-of-hand">
+            <img src="./img/card.jfif" alt="">
+        </div>
+        <div class="card-of-hand">
+            <img src="./img/card.jfif" alt="">
+        </div>
+        <div class="card-of-hand">
+            <img src="./img/card.jfif" alt="">
+        </div> -->
+
+    </section>
+    
+    <script src="../controllers/game.js"></script>
+</body>
+</html>

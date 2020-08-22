@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Munchkin - Online</title>
+</head>
+<body>
+    
+    <section class="section-login">
+        <form action="/game" class="form-login" >
+            <label>
+                <img src="../assets/img/title-logo.png" alt="logo-munchkin">
+            </label>
+
+            <label>
+                <div class="carousel">
+                    <div class="img-carousel" id="img-1">
+                        <!-- <img src="./img/laura.jpg" id="ft-1" alt=""> -->
+                    </div>
+                    <!-- <div class="img-carousel invisible" id="img-2">
+                        <img src="./img/bald.jpg" id="ft-2" alt="">
+                    </div>
+                    <div class="img-carousel invisible" id="img-3">
+                        <img src="./img/postman.jpg" id="ft-3" alt="">
+                    </div> -->
+                </div>
+
+                <div class="btn-carousel" id="btn-nex" onclick="next()">nex</div>
+                <div class="btn-carousel" id="btn-prev"onclick="prev()">pre</div>
+
+            </label>
+
+            <label>
+                <input type="text" placeholder="Seu nome">
+            </label>
+            <label>
+                <button type="submit" class="btn-login" onclick="login(event)">Entrar</button>
+            </label>
+        </form>
+    </section>
+    
+    <script src="../controllers/login.js"></script>
+
+</body>
+</html>
