@@ -1,17 +1,43 @@
 
-    var socket = io("http://localhost:3000");
+    const socket = io("http://localhost:3000");
+    // const socket = io("http://50991a22e32d.ngrok.io");
+    var number = 1;
 
     function login(event) {
         event.preventDefault();
         
         const userName = document.querySelector("input").value;
-        // const character = document.querySelector("")
+        const character = "../assets/img/draw-"+number+".png";
+
         if(userName) {
             var User = {
                 id:"",
                 name: userName,
-                character:"",
-                cards: [],
+                character: character,
+                cards: 
+                    [
+                        card = {
+                        id: "1",
+                        local: "hand",
+                        type: "treature"
+                        },
+                        card = {
+                            id: "3",
+                            local: "hand",
+                            type: "treature"
+                        },
+                        card = {
+                            id: "10",
+                            local: "hand",
+                            type: "treature"
+                        },
+                        card = {
+                            id: "11",
+                            local: "hand",
+                            type: "treature"
+                        }
+                    ]
+                ,
                 token: "",
             }
             socket.emit("createUser", User);
@@ -37,4 +63,22 @@
             console.log(data);
         }
     })
+
+    
+        function next() {
+            if(number < 2) {
+            number++;
+            const carousel = document.querySelector(".img-carousel");
+            return carousel.innerHTML = `<img src="../assets/img/draw-${number}.png">`
+            }
+        }
+        function prev() {
+            if(number > 1) {
+            number--;
+            const carousel = document.querySelector(".img-carousel");
+            return carousel.innerHTML = `<img src="../assets/img/draw-${number}.png">`
+            }
+        }
+        
+
         
